@@ -39,13 +39,33 @@
   </nav>
   
   <div class="container" id="hero">
-    <div class="hero-text-wrapper">
+    <div class="hero-text-wrapper d-flex flex-column text-center">
       <span class="hero-title">Find Your Suitable Destination</span>
       <span class="hero-subtitle">Explore incredible things to do around Madura</span>
-
     </div>
-    <img class="container-fluid hero-img" src="assets/Images/Arosbaya-3.jpeg" alt="">
+    <img class="container-fluid hero-img" src="assets/Images/Arosbaya-3.jpeg" alt="Image">
+    <form class="hero-form col-lg-8 d-flex flex-column justify-content-between">
+        <div class="hero-input-wrapper d-flex flex-row align-items-center justify-content-between">
+          <div>
+            <label class="hero-input-label" for="location">Location</label>
+            <div class="d-flex flex-row align-items-center">
+              <input type="text" id="location" name="location" placeholder="Masukan Destinasi Anda Disini" />
+              <img src="assets/Icon/search-icon.svg" width="16px" height="16px" alt="Search Icon">
+            </div>
+          </div>
+          <div>
+            <label class="hero-input-label" for="filter">Filter</label>
+            <div class="d-flex flex-row align-items-center">
+              <input type="text" id="filter" name="filter" placeholder="Masukan Destinasi Anda Disini" />
+              <img src="assets/Icon/search-icon.svg" width="16px" height="16px" alt="Search Icon">
+            </div>
+          </div>
+          <a href="#" class="btn btn-lg btn-primary">Search</a>
+        </div>
+    </form>
   </div>
+
+
   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

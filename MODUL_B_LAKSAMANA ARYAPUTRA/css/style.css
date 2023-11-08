@@ -63,8 +63,11 @@ h1,h2,h3,h4,h5,h5 {
 
 /* Hero */
 
-#hero .hero-img {
+#hero {
     position: relative;
+}
+
+#hero .hero-img {
     padding: unset;
     object-fit: cover;
     object-position: center;
@@ -77,12 +80,9 @@ h1,h2,h3,h4,h5,h5 {
 #hero .hero-text-wrapper {
     position: absolute;
     min-width: max-content;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     gap: 16px;
     z-index: 1;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--white);
@@ -96,14 +96,41 @@ h1,h2,h3,h4,h5,h5 {
     font-size: 24px;
 }
 
-/* 
-#hero .hero-subtitle {
+#hero .hero-form {
     position: absolute;
-    min-width: max-content;
-    z-index: 1;
-    top: 65%;
+    z-index: 2;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--white);
-    font-size: 24px;
-} */
+    background-color: var(--white);
+    border-radius: 24px;
+    box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.15);   
+}
+
+#hero .hero-input-wrapper {
+    padding: 24px 32px;
+    gap: 8px;
+
+    #location {
+        border: unset;
+    }
+
+    #location::placeholder {
+        font-size: 12px;
+    }
+
+    #filter {
+        border: unset;
+    }
+
+    #filter::placeholder {
+        font-size: 12px;
+    }
+}
+
+#hero .hero-input-wrapper label {
+    font-size: 18px;
+}
+
+
+
+
