@@ -1,6 +1,30 @@
 :root {
-    --primary-color: #fd8712;
-    --secondary-color: #878787;
+    --primary: #fd8712 !important;
+    --primary-color-light: ffc600 !important;
+    --secondary-color: #878787 !important;
     --black: #000000;
     --white: #ffffff;
+}
+
+@font-face {
+    font-family: Poppins-light;
+    src: url('./Font/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: Poppins-medium;
+    src: url('./Font/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Poppins-semibold;
+    src: url('./Font/Poppins-SemiBold.ttf');
+}
+
+body {
+    font-family: Poppins-medium !important;
+}
+
+h1,h2,h3,h4,h5,h5 {
+    font-family: Poppins-medium !important;
 }
