@@ -28,3 +28,82 @@ body {
 h1,h2,h3,h4,h5,h5 {
     font-family: Poppins-medium !important;
 }
+
+/* Navbar */
+
+#navbar {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#navbar .navbar-brand {
+    font-size: 24px;
+}
+
+#navbar .navbar-brand.active {
+    color: var(--primary);
+}
+
+#navbar .nav-link, 
+.navbar-brand {
+    color: var(--black);
+}
+
+#navbar .nav-link:hover {
+    color: var(--primary);
+}
+
+#navbar .nav-link.active {
+    color: var(--primary);
+}
+
+#navbar .nav-link.auth{
+    padding: unset;
+}
+
+/* Hero */
+
+#hero .hero-img {
+    position: relative;
+    padding: unset;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 32px;
+    max-height: 526px;
+    filter: brightness(0.70);
+    margin-top: 40px;
+}
+
+#hero .hero-text-wrapper {
+    position: absolute;
+    min-width: max-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    z-index: 1;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+}
+
+#hero .hero-title {
+    font-size: 60px;
+}
+
+#hero .hero-subtitle {
+    font-size: 24px;
+}
+
+/* 
+#hero .hero-subtitle {
+    position: absolute;
+    min-width: max-content;
+    z-index: 1;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: 24px;
+} */
