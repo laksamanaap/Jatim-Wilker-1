@@ -110,20 +110,19 @@ h1,h2,h3,h4,h5,h5 {
     padding: 24px 32px;
     gap: 8px;
 
-    #location {
-        border: unset;
-    }
-
-    #location::placeholder {
-        font-size: 12px;
-    }
-
+    #location,
     #filter {
         border: unset;
     }
 
+    #location::placeholder,
     #filter::placeholder {
         font-size: 12px;
+    }
+
+    #location:focus:focus-visible,
+    #filter:focus:focus-visible {
+        outline: none;
     }
 }
 
