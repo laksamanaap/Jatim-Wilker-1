@@ -55,9 +55,15 @@
           </div>
           <div>
             <label class="hero-input-label" for="filter">Filter</label>
-            <div class="d-flex flex-row align-items-center">
-              <input type="text" id="filter" name="filter" placeholder="Masukan Destinasi Anda Disini" />
-              <img src="assets/Icon/search-icon.svg" width="16px" height="16px" alt="Search Icon">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
             </div>
           </div>
           <button type="submit" class="btn btn-lg btn-primary">Search</button>
@@ -69,6 +75,6 @@
     <h1>Trending Tours</h1>
   </div>
 
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
