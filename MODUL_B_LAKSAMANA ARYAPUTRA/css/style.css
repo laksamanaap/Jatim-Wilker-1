@@ -171,17 +171,20 @@ h1 {
     color: var(--secondary-color);
 }
 
-#trending-tours .carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 3rem;
+
+#trending-tours .carousel-control-next.arrow-right:hover,
+#trending-tours .carousel-control-prev.arrow-left:hover {
+    background-color: var(--primary) !important;
 }
 
-#trending-tours .carousel-control-prev-icon {
-    background-image: url("/assets/Icon/arrow-left-icon.svg");
+#trending-tours .carousel-control-next.arrow-right:hover path,
+#trending-tours .carousel-control-prev.arrow-left:hover path {
+    stroke: var(--white) !important;
 }
 
-#trending-tours .carousel-control-next-icon {
-    background-image: url("/assets/Icon/arrow-right-icon.svg");
+#trending-tours .carousel-control-next.arrow-right,
+#trending-tours .carousel-control-prev.arrow-left {
+    position: unset !important;
 }
 
 #trending-tours .carousel-control-prev.arrow-left {
@@ -192,11 +195,10 @@ h1 {
     max-height: 40px;
     border-radius: 50%;
     max-width: 40px;
+    width: 100%;
     opacity: unset;
     margin-left: auto;
-    transform: translateX(-50px);
     border: 2px solid var(--primary);
-    color: var(--black) !important;
 }
 
 #trending-tours .carousel-control-next.arrow-right {
@@ -208,15 +210,9 @@ h1 {
     border-radius: 50%;
     max-width: 40px;
     opacity: unset;
+    width: 100%;
     margin-left: auto;
     border: 2px solid var(--primary);
-    color: var(--black) !important;
-}
-
-#trending-tours .carousel-control-next.arrow-right:hover, 
-#trending-tours .carousel-control-prev.arrow-left:hover {
-    background-color: var(--primary);
-    background-image: url();
 }
 
 
@@ -249,6 +245,10 @@ h1 {
 #trending-tours .trending-card .img-fluid {
     filter: brightness(0.80) !important;
     border-radius: 24px;
+    max-height: 280px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 #trending-tours span.trending-card-title {
@@ -279,4 +279,114 @@ h1 {
     color: var(--primary);
 }
 
+/* Top Destinations */
 
+
+#top-destinations {
+    margin-top: 125px;
+}
+
+
+#top-destinations .header-title {
+    text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.17);
+}
+
+#top-destinations .header-subtitle {
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+#top-destinations .browse-button {
+   color: var(--black);
+   text-decoration: none;
+}
+
+#top-destinations .browse-button:hover {
+    color: var(--primary);
+}
+
+#top-destinations .browse-button:hover path {
+    fill: var(--primary) !important;
+}
+
+#top-destinations .trending-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+#top-destinations .trending-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+}
+
+
+#top-destinations .trending-card .img-fluid {
+    filter: brightness(0.80) !important;
+    border-radius: 24px;
+    max-height: 280px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#top-destinations .trending-card .img-fluid.top-destination {
+    min-height: 280px;
+}
+
+#top-destinations span.trending-card-title {
+    font-size: 18px;
+    color: var(--black);
+}
+
+#top-destinations span.trending-card-title.huge {
+   display: flex;
+   width: 50%;
+}
+
+#top-destinations .trending-card-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+#top-destinations .trending-card-star {
+    background-color: rgba(135, 135, 135, 0.10);
+    border-radius: 10px;
+    padding: 2px 8px;
+}
+
+#top-destinations .trending-card-star span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#top-destinations .trending-card-star svg {
+    color: var(--primary);
+}
+
+
+/* Guest Review */
+
+#guest-review {
+    margin-top: 125px;
+}
+
+#guest-review .header-title {
+    text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.17);
+}
+
+#guest-review .header-subtitle {
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+#guest-review a.review-button {
+    max-height: 65px;
+    padding: 24px 20px !important;
+}
