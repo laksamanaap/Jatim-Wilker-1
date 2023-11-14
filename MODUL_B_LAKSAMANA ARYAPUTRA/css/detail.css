@@ -304,7 +304,7 @@ h1 {
 
 #guest-review .review-card {
     background-color: var(--white);
-    box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.10);
+    /* box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.10); */
     padding: 20px 24px;
     border-radius: 24px;
 }
@@ -314,22 +314,24 @@ h1 {
 }
 
 #guest-review .review-desc {
-    font-size: 14px;
-    color: #9a9a9a;
+    font-size: 12px;
+    color: var(--secondary-color-light);
     max-width: 520px;
 }
 
 #guest-review .review-footer .review-user-img {
-    width: 72px;
+    width: 45px;
+    height: fit-content;
+    object-fit: cover;
     border-radius: 50%;
 }
 
 #guest-review .review-user-title {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 #guest-review .review-user-subtitle {
-    font-size: 16px;
+    font-size: 10px;
     color: var(--secondary-color-light);
 }
 
