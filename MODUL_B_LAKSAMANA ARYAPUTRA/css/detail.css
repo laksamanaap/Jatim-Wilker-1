@@ -99,58 +99,104 @@ h1 {
 
 /* Detail Photos */
 
-#top-content {
+#detail-pages {
     margin-top: 60px;
 }
 
-#top-content .detail-photos-wrapper {
+#detail-pages .detail-photos-wrapper {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-#top-content .detail-photos-huge {
+#detail-pages .detail-photos-huge {
     max-width: 635px;
     border-top-left-radius: 32px;
     border-bottom-left-radius: 32px;
 }
 
-#top-content .detail-photos-overview {
+#detail-pages .detail-photos-overview {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
 }
 
-#top-content .detail-photos-overview .img-fluid {
+#detail-pages .detail-photos-overview .img-fluid {
     height: 100% !important;
 }
 
-#top-content .detail-photos-wrapper img {
+#detail-pages .detail-photos-wrapper img {
     object-fit: cover;
     object-position: center;
 }
 
-#top-content .detail-content {
+#detail-pages .detail-content {
     margin-top: 48px;
 }
 
-#top-content .detail-content h1 {
+#detail-pages .detail-content h1 {
     font-weight: 600;
 }
 
-#top-content .detail-content-location path {
+#detail-pages .detail-content-location path {
     fill: var(--secondary-color);
 }
 
-#top-content .detail-content-location span {
+#detail-pages .detail-content-location span {
     font-size: 18px;
     font-weight: 600;
     font-family: Poppins-light;
 }
 
-#top-content .detail-content-right span {
+#detail-pages .detail-content-right span {
     font-size: 18px;
 }
+
+#detail-pages .detail-content-bottom {
+    margin-top: 85px;
+}
+
+/* Description & Facility */
+
+#detail-pages .detail-content-description 
+.detail-content-title {
+    font-size: 18px;
+}
+
+#detail-pages .detail-content-description 
+.detail-content-subtitle {
+    font-size: 16px;
+    max-width: 575px;
+    color: var(--secondary-color);
+}
+
+#detail-pages .detail-content-description
+.detail-content-more {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+#detail-pages .detail-facility-wrapper li {
+    color: var(--secondary-color);
+    padding-left: unset !important;
+    font-size: 16px;
+}
+
+#detail-pages .detail-facility-wrapper li::marker {
+    color: var(--black) !important;
+}
+
+/* Detail Plan */
+
+#detail-pages .detail-plan {
+    margin-top: 72px;
+}
+
+#detail-pages .detail-plan span {
+    font-size: 18px;
+}
+
+
 
 /* Footer */
 
