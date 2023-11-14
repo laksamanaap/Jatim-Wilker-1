@@ -241,6 +241,11 @@ h1 {
 
 /* Guest Review */
 
+#guest-review #carouselDetailReview {
+    box-shadow : 0px 7px 30px rgba(0, 0, 0, 0.10);
+    border-radius: 24px;
+}
+
 #guest-review .carousel-control-next.arrow-right:hover,
 #guest-review .carousel-control-prev.arrow-left:hover {
     background-color: var(--primary) !important;
@@ -306,6 +311,11 @@ h1 {
     background-color: var(--white);
     /* box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.10); */
     padding: 20px 24px;
+    border-radius: 24px;
+}
+
+#guest-review .review-card-overlay {
+    box-shadow: 42px 10px 45px rgba(0, 0, 0, 0.10);
     border-radius: 24px;
 }
 
