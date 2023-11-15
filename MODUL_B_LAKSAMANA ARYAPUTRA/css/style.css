@@ -35,6 +35,13 @@ h1 {
     font-size: 48px !important;
 }
 
+@media screen and (max-width: 991.8px) {
+    .container.container-homepage {
+        max-width: 720px;
+    }
+}
+
+
 /* Navbar */
 
 #navbar {
@@ -92,6 +99,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--white);
+
 }
 
 #hero .hero-title {
@@ -156,6 +164,22 @@ h1 {
 #hero .hero-input-wrapper label {
     font-size: 18px;
 }
+
+@media screen and (max-width: 991.98px) {
+    #hero .hero-text-wrapper {
+        min-width: unset;
+    }
+
+    #hero .hero-title {
+        font-size: 48px;
+    }
+
+    #hero .hero-subtitle {
+        font-size: 18px;
+    }
+}
+
+
 
 /* Trending Tours */
 
