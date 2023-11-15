@@ -42,37 +42,7 @@ h1 {
 }
 
 
-/* Navbar */
 
-#navbar {
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-
-#navbar .navbar-brand {
-    font-size: 24px;
-}
-
-#navbar .navbar-brand.active {
-    color: var(--primary);
-}
-
-#navbar .nav-link, 
-.navbar-brand {
-    color: var(--black);
-}
-
-#navbar .nav-link:hover {
-    color: var(--primary);
-}
-
-#navbar .nav-link.active {
-    color: var(--primary);
-}
-
-#navbar .nav-link.auth{
-    padding: unset;
-}
 
 /* Hero */
 
@@ -305,6 +275,19 @@ h1 {
     color: var(--primary);
 }
 
+
+@media only screen and (max-width: 991.98px) {
+   #trending-tours .carousel-control-next.arrow-right,
+    #trending-tours .carousel-control-prev.arrow-left {
+        position: unset !important;
+        margin-left: unset !important;
+    }
+
+    #trending-tours .header-wrapper {
+        flex-direction: column !important;
+    }
+}
+
 /* Top Destinations */
 
 
@@ -396,6 +379,13 @@ h1 {
 }
 
 
+@media only screen and (max-width : 991.98px) {
+    #top-destinations .header-wrapper {
+        flex-direction: column !important;
+    }
+}
+
+
 /* Guest Review */
 
 #guest-review {
@@ -452,6 +442,11 @@ h1 {
     margin-top: 10px;
 }
 
+@media only screen and (max-width : 991.98px) {
+    #guest-review .header-wrapper {
+        flex-direction: column !important;
+    }
+}
 
 /* CTA */
 

@@ -40,38 +40,6 @@ h1 {
     font-size: 48px !important;
 }
 
-/* Navbar */
-
-#navbar {
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-
-#navbar .navbar-brand {
-    font-size: 24px;
-}
-
-#navbar .navbar-brand.active {
-    color: var(--primary);
-}
-
-#navbar .nav-link,
-.navbar-brand {
-    color: var(--black);
-}
-
-#navbar .nav-link:hover {
-    color: var(--primary);
-}
-
-#navbar .nav-link.active {
-    color: var(--primary);
-}
-
-#navbar .nav-link.auth {
-    padding: unset;
-}
-
 /* Breadcrumb */
 
 #breadcrumb .breadcrumb-wrapper {
