@@ -35,13 +35,17 @@ h1 {
     font-size: 48px !important;
 }
 
-@media screen and (max-width: 991.8px) {
+@media only screen and (max-width: 991.8px) {
     .container.container-homepage {
         max-width: 720px;
     }
 }
 
-
+@media only screen and (max-width : 320px) {
+    h1 {
+        font-size: 40px !important;
+    }
+}
 
 
 /* Hero */
@@ -446,6 +450,10 @@ h1 {
 @media only screen and (max-width: 575.98px) {
     #top-destinations .header-wrapper {
         text-align: center;
+    }
+
+    #top-destinations .trending-card-title.huge {
+        width: 100% !important;
     }
 }
 
