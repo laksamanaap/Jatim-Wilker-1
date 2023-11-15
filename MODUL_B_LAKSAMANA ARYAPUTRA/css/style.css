@@ -149,7 +149,20 @@ h1 {
     }
 }
 
+@media screen and (max-width : 767.98px) {
+    #hero .hero-img {
+        height: 529px;
+        max-height: 529px;
+    }
 
+    #hero .hero-text-wrapper {
+        width: 100%;
+    }
+
+    #hero .hero-title {
+        font-size: 38px;
+    }
+}
 
 /* Trending Tours */
 
