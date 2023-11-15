@@ -164,6 +164,38 @@ h1 {
     }
 }
 
+
+@media screen and (max-width : 575.98px) {
+    #hero .hero-input-wrapper {
+        flex-direction: column !important;
+    }
+
+    #hero .hero-text-wrapper {
+        width: 90%;
+    }
+
+    #hero .hero-form {
+        width: 75%;
+        align-items: flex-start !important;
+    }
+
+    #hero .hero-input-wrapper {
+        width: 100%;
+        align-items: flex-start !important;
+        gap: 24px !important;
+    }
+
+    #hero .hero-input-wrapper {
+        width: 100%;
+        align-items: flex-start !important;
+        gap: 24px !important;
+    }
+
+    #hero .hero-input-wrapper .btn {
+        width: 100%;
+    }
+}
+
 /* Trending Tours */
 
 
@@ -299,6 +331,19 @@ h1 {
     #trending-tours .header-wrapper {
         flex-direction: column !important;
     }
+
+    #trending-tours .header-wrapper {
+        text-align: center;
+    }
+
+}
+
+
+@media only screen and (max-width: 575.98px) {
+    #trending-tours {
+        margin-top: 250px;
+    }
+
 }
 
 /* Top Destinations */
@@ -398,6 +443,12 @@ h1 {
     }
 }
 
+@media only screen and (max-width: 575.98px) {
+    #top-destinations .header-wrapper {
+        text-align: center;
+    }
+}
+
 
 /* Guest Review */
 
@@ -461,6 +512,18 @@ h1 {
     }
 }
 
+@media only screen and (max-width : 576.98px) {
+    #guest-review .header-title-wrapper {
+        text-align: center;
+    }
+
+    #guest-review .review-card-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 24px !important;
+    }
+}
+
 /* CTA */
 
 #cta {
@@ -472,6 +535,8 @@ h1 {
     background-color: var(--primary);
     border-radius: 32px;
     padding: 36px 24px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #cta .cta-wrapper h1 {
@@ -514,6 +579,30 @@ h1 {
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
+}
+
+@media only screen and (max-width : 576.98px) {
+   
+   #cta .cta-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 48px !important;
+   }
+
+   #cta .cta-wrapper h1 {
+       text-align: center;
+   }
+
+    #cta .cta-form-subscribe {
+        display: flex;
+        flex-direction: column !important;
+        gap: 12px;
+    }
+
+    #cta .cta-form-subscribe .btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 /* Footer */
