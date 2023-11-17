@@ -201,10 +201,52 @@ h1 {
     position: absolute;
     top: 0;
     bottom: -32px;
-    transform: translate(-3.5%, 6%);
+    transform: translate(-3.5%, 4.5%);
     width: 1.25rem;
     border-left: 2px dashed var(--primary);
 }
+
+@media only screen and (max-width : 1199.98px) {
+    #detail-pages .detail-photos-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #detail-pages .detail-photos-huge {
+        max-width: 100%;
+        max-height: 525px;
+        border-radius: 32px;
+    }
+
+    #detail-pages .detail-photos-overview {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+
+    #detail-pages .detail-photos-wrapper img {
+        object-fit: cover;
+        object-position: center;
+        border-radius: 16px;
+    }
+
+    #detail-pages .detail-content-bottom {
+        display: flex;
+        flex-direction: column !important;
+        gap: 48px;
+    }
+
+}
+
+@media only screen and (max-width: 991.98px) {
+    #detail-pages .detail-plan-wrapper {
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+
 
 
 /* Guest Review */
