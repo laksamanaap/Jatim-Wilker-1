@@ -146,6 +146,22 @@ h1 {
     font-weight: bold;
 }
 
+#detail-pages .detail-facility-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 32px;
+}
+
+#detail-pages .detail-facility-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#detail-pages .detail-facility-wrapper ul {
+    padding-left: 1rem !important;
+}
+
 #detail-pages .detail-facility-wrapper li {
     color: var(--secondary-color);
     padding-left: unset !important;
@@ -251,6 +267,37 @@ h1 {
     #detail-pages .detail-content {
         flex-direction: column !important;
     }
+
+    #detail-pages .detail-plan-line::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        transform: translate(-25%, 65%);
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 50%;
+        z-index: 1;
+        background-color: #fff;
+        border: 2px solid var(--primary);
+    }
+
+    #detail-pages .detail-plan-line::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: -32px;
+        transform: translate(20.5%, 5%);
+        width: 1.25rem;
+        border-left: 2px dashed var(--primary);
+    }
+}
+
+@media only screen and (max-width: 479.98px) {
+    #detail-pages .detail-facility-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    } 
 }
 
 /* Guest Review */
