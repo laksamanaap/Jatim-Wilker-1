@@ -14,7 +14,7 @@ class UserController extends Controller
      *     path="/get-users",
      *     tags={"Users"},
      *     summary="Returns a Sample API response",
-     *     description="A sample greeting to test out the API",
+     *     description="Return all users registered",
      *     operationId="greet",
      *     @OA\Response(
      *         response="default",
